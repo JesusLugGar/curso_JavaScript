@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* Tamaño del logo en desktop */
+.brand-logo {
+  height: 130px !important;
+  width: auto !important;
+  display: block;
+  object-fit: contain;
+}
+/*la clase para moverlo a la izquierda*/
+.brand-left {
+    margin-left: -150px;
+}
+
+.letras {
+    font-size: .85rem;
+    line-height: 1;
+    opacity: .9;
+    margin-left: -100px;
+}
+
+/* ICONOS */
+.action-link {
+  width: 60px; 
+  height: 4px;
+  display: inline-flex; 
+ 
+  align-items: center; 
+  justify-content: center;
+}
+.action-link i { 
+    font-size: 1.9rem; 
+}
+
+
+
+/*para mis 10 imagenes en el index*/
+.catalogo {
+  width: 1200px; 
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+/* Grid fijo de 5 columnas */
+.catalogo .grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+/* para colocarlas del mismo alto */
+.catalogo .card {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 320px; 
+}
+
+.catalogo .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.catalogo .card-body {
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.catalogo .card-body h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.catalogo .price {
+  margin: 0;
+  color: #6c757d;
+}
