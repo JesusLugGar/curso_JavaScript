@@ -1,4 +1,4 @@
-let LS_KEY = "carrito";
+let LS_KEY = "carrito";//localStore Key
 let carrito = [];
 
 function cargarCarrito() {

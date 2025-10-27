@@ -1,6 +1,6 @@
 let LS_KEY = "carrito";
 
-// DATOS 
+// DATOS ////luego debo agregar una imagen, tallas tambien.
 const productos = [
   { id: 1, nombre: "Casco Dark",   precio: 105990 },
   { id: 2, nombre: "Casco Integral", precio: 110990 },
