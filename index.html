@@ -19,193 +19,379 @@
     <!-- Etiqueta para CSS -->
     <link rel="stylesheet" href="./style/style.css" />
 
-    <title>Siente la Rodada, Se Libre ahora | Aventum</title>    <!--Aventum Contracción de "Aventura" y "Momentum" (impulso).-->
+    <title>Siente la Rodada, Se Libre ahora | Aventum</title>
+    <!--Aventum Contracción de "Aventura" y "Momentum" (impulso).-->
   </head>
   <body>
-    <header class="boder-button bg-white">
+    <header class="border-bottom bg-white">
       <div class="container py-2">
-        <div class="d-flex align-items-center justify-content-between gap-2">
-          
-            <!--logo-->
-          <a href="#" class="brand-left">
+        <div class="d-flex align-items-center justify-content-between">
+          <!-- Logo -->
+          <a href="#" class="d-inline-flex align-items-center">
             <img
               src="./assets/img/logo4.png"
               alt="logoMoto"
               class="brand-logo"
-              
+              style="height: 42px"
             />
           </a>
-          <!--login /carro de compra MENU-->
-          <ul class="list-unstyled d-flex align-items-center mb-0 gap-2">
+
+          <!-- Menú -->
+          <ul class="list-unstyled d-flex align-items-center gap-5 mb-0">
             <li>
               <a
-                href="./pages/login.html"
-                class="text-dark action-link"
-                aria-label="Login"
-                title="Login"
-              ><span class="letras">Login</span>
-                <i class="fa-solid fa-right-to-bracket ms-1"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="./pages/carrito.html"
-                class="text-dark action-link"
-                aria-label="Carrito"
-                title="Carrito"
+                href="#"
+                class="text-dark text-decoration-none d-inline-flex align-items-center fw-medium"
               >
-                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Inicio</span>
               </a>
             </li>
+
+            <a
+              href="./pages/carrito.html"
+              class="text-dark action-link position-relative"
+              aria-label="Carrito"
+              title="Carrito"
+            >
+              <i class="fa-solid fa-cart-shopping fs-2"></i>
+              <span
+                id="cartCount"
+                class="cart-badge position-absolute translate-middle"
+              >
+                0
+              </span>
+            </a>
           </ul>
         </div>
       </div>
     </header>
 
-    <main>
+    <section id="heroCarousel" class="carousel slide hero" data-bs-ride="carousel" data-bs-interval="4000">
+  <div class="carousel-inner">
 
-
-  <section class="catalogo">
-    <h1 class="h3 mb-3">Accesorios Moto</h1>
-
-    <div class="grid">
-
-      <!-- producto 1 -->
-      <article class="card">
-        <img src="./assets/img/casco1.png" alt="Casco dark">
-        <div class="card-body">
-          <h6>Casco Dark</h6>
-          <p class="price">$105.990</p>
-          <button class="btn btn-dark add-to-cart"
-                  data-id="1" data-name="Casco dark" data-price="105990">
-            Agregar al carro
-          </button>
-        </div>
-      </article>
-
-      <!-- producto 2 -->
-      <article class="card">
-        <img src="./assets/img/casco2.png" alt="Casco integral">
-        <div class="card-body">
-          <h6>Casco Integral</h6>
-          <p class="price">$110.990</p>
-          <button class="btn btn-dark add-to-cart"
-                  data-id="2" data-name="Casco integral" data-price="110990">
-            Agregar al carro
-          </button>
-        </div>
-      </article>
-
-      <!-- producto 3 -->
-      <article class="card">
-        <img src="./assets/img/casco3.png" alt="Casco claro">
-        <div class="card-body">
-          <h6>Casco Color Claro</h6>
-          <p class="price">$89.990</p>
-          <button class="btn btn-dark add-to-cart"
-                  data-id="3" data-name="Casco claro" data-price="89990">
-            Agregar al carro
-          </button>
-        </div>
-      </article>
-
-      <!-- producto 4 -->
-      <article class="card">
-        <img src="./assets/img/casco4.png" alt="Casco adventure">
-        <div class="card-body">
-          <h6>Casco para Adventure</h6>
-          <p class="price">$140.990</p>
-          <button class="btn btn-dark add-to-cart"
-                  data-id="4" data-name="Casco adventure" data-price="140990">
-            Agregar al carro
-          </button>
-        </div>
-      </article>
-
-      <!-- producto 5 -->
-      <article class="card">
-        <img src="./assets/img/casco5.png" alt="Casco street">
-        <div class="card-body">
-          <h6>Casco Street</h6>
-          <p class="price">$89.990</p>
-          <button class="btn btn-dark add-to-cart"
-                  data-id="5" data-name="Casco street" data-price="89990">
-            Agregar al carro
-          </button>
-        </div>
-      </article>
-
-      <!-- producto 6 -->
-      <article class="card">
-        <img src="./assets/img/chaqueta1.png" alt="Andes">
-        <div class="card-body">
-          <h6>Chaqueta Andes</h6>
-          <p class="price">$99.990</p>
-          <button class="btn btn-dark add-to-cart"
-                  data-id="6" data-name="Andes" data-price="99990">
-            Agregar al carro
-          </button>
-        </div>
-      </article>
-
-      <!-- producto 7 -->
-      <article class="card">
-        <img src="./assets/img/chaqueta2.png" alt="Chaqueta street">
-        <div class="card-body">
-          <h6>Chaqueta Street Dark</h6>
-          <p class="price">$119.990</p>
-          <button class="btn btn-dark add-to-cart"
-                  data-id="7" data-name="Chaqueta street" data-price="119990">
-            Agregar al carro
-          </button>
-        </div>
-      </article>
-
-      <!-- producto 8 -->
-      <article class="card">
-        <img src="./assets/img/chaqueta3.png" alt="Doble">
-        <div class="card-body">
-          <h6>Chaqueta doble Invierno/Verano</h6>
-          <p class="price">$120.990</p>
-          <button class="btn btn-dark add-to-cart"
-                  data-id="8" data-name="Doble" data-price="120990">
-            Agregar al carro
-          </button>
-        </div>
-      </article>
-
-      <!-- producto 9 -->
-      <article class="card">
-        <img src="./assets/img/chaqueta4.png" alt="Fox">
-        <div class="card-body">
-          <h6>Chaqueta Fox verde</h6>
-          <p class="price">$145.990</p>
-          <button class="btn btn-dark add-to-cart"
-                  data-id="9" data-name="Fox" data-price="145990">
-            Agregar al carro
-          </button>
-        </div>
-      </article>
-
-      <!-- producto 10 -->
-      <article class="card">
-        <img src="./assets/img/chaqueta5.png" alt="Chaqueta protectores">
-        <div class="card-body">
-          <h6>Chaqueta con Protectores</h6>
-          <p class="price">$150.990</p>
-          <button class="btn btn-dark add-to-cart"
-                  data-id="10" data-name="Chaqueta protectores" data-price="150990">
-            Agregar al carro
-          </button>
-        </div>
-      </article>
-
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="hero-bg" style="background-image:url('../assets/img/banner1.png')"></div>
+      <div class="container hero-content">
+        <h1 class="display-6 mb-1">Accesorios Moto</h1>
+        <p class="lead m-0">Versatilidad en dos ruedas.</p>
+      </div>
     </div>
-  </section>     
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="hero-bg" style="background-image:url('../assets/img/banner3.png')"></div>
+      <div class="container hero-content">
+        <h1 class="display-6 mb-1">Protección y estilo</h1>
+        <p class="lead m-0">Encuentra tu equipo ideal.</p>
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="hero-bg" style="background-image:url('../assets/img/banner4.png')"></div>
+      <div class="container hero-content">
+        <h1 class="display-6 mb-1">Listo para la ruta</h1>
+        <p class="lead m-0">Calidad a buen precio.</p>
+      </div>
+    </div>
+  </div>
+
+
+    <main>
+      <section class="catalogo">
+        <h1 class="h3 mb-3">Accesorios Moto</h1>
+
+        <div class="grid">
+          <!-- producto 1 -->
+          <article class="card">
+            <img src="./assets/img/casco1.png" alt="Casco dark" />
+            <div class="card-body">
+              <h6>Casco Dark</h6>
+              <p class="price">$105.990</p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-id="1"
+                data-name="Casco dark"
+                data-price="105990"
+              >
+                Agregar al carro
+              </button>
+            </div>
+          </article>
+
+          <!-- producto 2 -->
+          <article class="card">
+            <img src="./assets/img/casco2.png" alt="Casco integral" />
+            <div class="card-body">
+              <h6>Casco Integral</h6>
+              <p class="price">$110.990</p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-id="2"
+                data-name="Casco integral"
+                data-price="110990"
+              >
+                Agregar al carro
+              </button>
+            </div>
+          </article>
+
+          <!-- producto 3 -->
+          <article class="card">
+            <img src="./assets/img/casco3.png" alt="Casco claro" />
+            <div class="card-body">
+              <h6>Casco Color Claro</h6>
+              <p class="price">$89.990</p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-id="3"
+                data-name="Casco claro"
+                data-price="89990"
+              >
+                Agregar al carro
+              </button>
+            </div>
+          </article>
+
+          <!-- producto 4 -->
+          <article class="card">
+            <img src="./assets/img/casco4.png" alt="Casco adventure" />
+            <div class="card-body">
+              <h6>Casco para Adventure</h6>
+              <p class="price">$140.990</p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-id="4"
+                data-name="Casco adventure"
+                data-price="140990"
+              >
+                Agregar al carro
+              </button>
+            </div>
+          </article>
+
+          <!-- producto 5 -->
+          <article class="card">
+            <img src="./assets/img/casco5.png" alt="Casco street" />
+            <div class="card-body">
+              <h6>Casco Street</h6>
+              <p class="price">$89.990</p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-id="5"
+                data-name="Casco street"
+                data-price="89990"
+              >
+                Agregar al carro
+              </button>
+            </div>
+          </article>
+
+          <!-- producto 6 -->
+          <article class="card">
+            <img src="./assets/img/chaqueta1.png" alt="Andes" />
+            <div class="card-body">
+              <h6>Chaqueta Andes</h6>
+              <p class="price">$99.990</p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-id="6"
+                data-name="Andes"
+                data-price="99990"
+              >
+                Agregar al carro
+              </button>
+            </div>
+          </article>
+
+          <!-- producto 7 -->
+          <article class="card">
+            <img src="./assets/img/chaqueta2.png" alt="Chaqueta street" />
+            <div class="card-body">
+              <h6>Chaqueta Street Dark</h6>
+              <p class="price">$119.990</p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-id="7"
+                data-name="Chaqueta street"
+                data-price="119990"
+              >
+                Agregar al carro
+              </button>
+            </div>
+          </article>
+
+          <!-- producto 8 -->
+          <article class="card">
+            <img src="./assets/img/chaqueta3.png" alt="Doble" />
+            <div class="card-body">
+              <h6>Chaqueta doble Invierno/Verano</h6>
+              <p class="price">$120.990</p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-id="8"
+                data-name="Doble"
+                data-price="120990"
+              >
+                Agregar al carro
+              </button>
+            </div>
+          </article>
+
+          <!-- producto 9 -->
+          <article class="card">
+            <img src="./assets/img/chaqueta4.png" alt="Fox" />
+            <div class="card-body">
+              <h6>Chaqueta Fox verde</h6>
+              <p class="price">$145.990</p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-id="9"
+                data-name="Fox"
+                data-price="145990"
+              >
+                Agregar al carro
+              </button>
+            </div>
+          </article>
+
+          <!-- producto 10 -->
+          <article class="card">
+            <img src="./assets/img/chaqueta5.png" alt="Chaqueta protectores" />
+            <div class="card-body">
+              <h6>Chaqueta con Protectores</h6>
+              <p class="price">$150.990</p>
+
+              <button
+                class="btn btn-dark add-to-cart"
+                data-id="10"
+                data-name="Chaqueta protectores"
+                data-price="150990"
+              >
+                Agregar al carro
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
+
+    <!-- Modal elegir talla y cantidad -->
+    <div class="modal fade" id="sizeQtyModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header py-2">
+            <h6 class="modal-title">Elegir opciones</h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-2">
+              <label class="form-label">Talla</label>
+              <select
+                id="modalSize"
+                class="form-select form-select-sm"
+              ></select>
+            </div>
+            <div class="mb-1">
+              <label class="form-label">Cantidad</label>
+              <input
+                id="modalQty"
+                type="number"
+                min="1"
+                value="1"
+                class="form-control form-control-sm"
+              />
+            </div>
+          </div>
+          <div class="modal-footer py-2">
+            <button
+              id="modalAddBtn"
+              type="button"
+              class="btn btn-primary btn-sm"
+            >
+              Agregar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-light border-top py-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- logo -->
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <a href="./index.html" class="d-inline-flex align-items-center">
+              <img
+                src="./assets/img/logo4.png"
+                alt="Aventum"
+                class="footer-logo"
+              />
+            </a>
+          </div>
+
+          <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+            <p class="mb-0 small">
+              © 2025 Aventum. Todos los derechos reservados.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div
+              class="d-flex justify-content-md-end justify-content-start gap-3 fs-4"
+            >
+              <a
+                href="https://www.instagram.com/jackiemakeup94?igsh=NzVmYTMzNGpwZTBn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                class="text-dark"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@jackiemakeup94"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                class="text-dark"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                href="https://www.threads.net/@jackiemakeup94"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Threads"
+                class="text-dark"
+              >
+                <i class="fa-brands fa-threads"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- BOOTSTRAP para JavaScript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <a
+      href="https://wa.me/56933025855?text=Hola%20JackieMakeUp%2C%20me%20interesan%20los%20cursos"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener"
+      aria-label="Abrir WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp fa-2xl"></i>
+    </a>
+
+    <!--SDN para animaciones de alerta-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- link para la logica del carrito-->
     <script src="./js/carrito.js"></script>

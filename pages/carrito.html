@@ -1,28 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carro De Compra</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Para usar iconos-->
+    <script
+      src="https://kit.fontawesome.com/26313447a8.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <h1>Carro de Compra</h1>
+    <!-- BOOTSTRAP para CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <div id="listaCarrito">
+    <!-- Etiqueta para CSS -->
+    <link rel="stylesheet" href="../style/style.css" />
 
-  </div>
+    <title>Siente la Rodada, Se Libre ahora | Aventum</title>
+    <!--Aventum Contracción de "Aventura" y "Momentum" (impulso).-->
+  </head>
+  <body class="min-vh-100 d-flex flex-column">
+    <header class="border-bottom bg-white">
+      <div class="container py-2">
+        <div class="d-flex align-items-center justify-content-between">
+          <!-- Logo -->
+          <a href="../index.html" class="d-inline-flex align-items-center">
+            <img
+              src="../assets/img/logo4.png"
+              alt="logoMoto"
+              class="brand-logo"
+              style="height: 42px"
+            />
+          </a>
 
-  <h3>Total: $<span id="totalGeneral">0</span></h3>
+          <!-- Menú -->
+          <ul class="list-unstyled d-flex align-items-center gap-5 mb-0">
+            <li>
+              <a
+                href="../index.html"
+                class="text-dark text-decoration-none d-inline-flex align-items-center fw-medium"
+              >
+                <span>Inicio</span>
+              </a>
+            </li>
 
-  <button id="btnVaciar">Vaciar</button>
-  <a href="../index.html">← Volver</a>
+            <a
+              href="../pages/carrito.html"
+              class="text-dark action-link position-relative"
+              aria-label="Carrito"
+              title="Carrito"
+            >
+              <i class="fa-solid fa-cart-shopping fs-2"></i>
+              <span
+                id="cartCount"
+                class="cart-badge position-absolute translate-middle"
+              >
+                0
+              </span>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-  <script src="../js/carrito-page.js"></script>
-</body>
-</html>
+    <main class="container my-4">
+      <div class="row g-4">
+        <!-- Lista de productos -->
+        <div class="col-lg-8">
+          <h1 class="h4 mb-3">
+            Carro ( <span id="summaryItems">0</span> productos )
+          </h1>
+          <div id="listaCarrito"></div>
 
-    
-</body>
+          <div class="d-flex gap-3 mt-3">
+            <button id="btnVaciar" class="btn btn-outline-danger btn-sm">
+              Vaciar
+            </button>
+            <a href="../index.html" class="btn btn-outline-danger btn-sm"
+              >← Volver</a
+            >
+          </div>
+        </div>
+
+        <!-- Resumen -->
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="h5 mb-3">Resumen de la compra</h2>
+
+              <div class="d-flex justify-content-between mb-2">
+                <span>Productos (<span id="summaryItemsRight">0</span>)</span>
+                <strong id="summarySubtotal">$0</strong>
+              </div>
+
+              <hr class="my-3" />
+
+              <div class="d-flex justify-content-between mb-3">
+                <span class="fw-semibold">Total:</span>
+                <span class="fw-bold" id="totalGeneral">$0</span>
+              </div>
+
+              <button id="btnCheckout" class="btn btn-dark w-100">Finalizar Compra</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-light border-top py-3 mt-auto">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- logo -->
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <a href="./index.html" class="d-inline-flex align-items-center">
+              <img
+                src="../assets/img/logo4.png"
+                alt="Aventum"
+                class="footer-logo"
+              />
+            </a>
+          </div>
+
+          <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+            <p class="mb-0 small">
+              © 2025 Aventum. Todos los derechos reservados.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div
+              class="d-flex justify-content-md-end justify-content-start gap-3 fs-4"
+            >
+              <a
+                href="https://www.instagram.com/jackiemakeup94?igsh=NzVmYTMzNGpwZTBn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                class="text-dark"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@jackiemakeup94"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                class="text-dark"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                href="https://www.threads.net/@jackiemakeup94"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Threads"
+                class="text-dark"
+              >
+                <i class="fa-brands fa-threads"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOOTSTRAP para JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <a
+      href="https://wa.me/56933025855?text=Hola%20JackieMakeUp%2C%20me%20interesan%20los%20cursos"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener"
+      aria-label="Abrir WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp fa-2xl"></i>
+    </a>
+
+    <!--SDN para animaciones de alerta-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="../js/carrito-page.js"></script>
+  </body>
 </html>
