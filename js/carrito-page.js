@@ -173,8 +173,8 @@ if (btnCheckout) {
       cancelButtonText: "Seguir comprando"
     }).then(res => {
       if (res.isConfirmed) {
-        
-        //aca simulo un pago
+
+        //aca simulo un pago con la alerta sweet
         carrito = [];
         guardarCarrito();
         render();

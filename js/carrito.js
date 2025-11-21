@@ -169,3 +169,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+const c = document.getElementById('heroCarousel');
+new bootstrap.Carousel(c, { interval: 5000, ride: 'carousel' });
